@@ -1,4 +1,3 @@
-
 .pun abbr,.pun blockquote,.pun cite,.pun dd,.pun div,.pun dl,.pun dt,.pun fieldset,.pun form,.pun h1,.pun h2,.pun h3,.pun h4,.pun h5,.pun img,.pun li,.pun ol,.pun p,.pun pre,.pun table,.pun td,.pun th,.pun ul {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
     list-style: none;
     padding: 6px 0 6px 0;
 }
-  
+
 div#brdmain {
     margin-top: 183px;
 }
@@ -1654,9 +1653,9 @@ nav {
     ::-webkit-scrollbar-thumb {
         background-color: #666;
     }
+}
 
 
-  
 #shout #ajaxChatChatList {
 	background-color:#272726;
 }
@@ -1857,5 +1856,4 @@ nav {
 
 .enhanced-error-message .error-text strong {
     color: #ff877f !important;
-}
 }
