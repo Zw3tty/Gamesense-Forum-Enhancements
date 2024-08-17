@@ -1,11 +1,4 @@
-/* ==UserStyle==
-@name           gamesense.pub Forum Styling
-@namespace      github.com/abbie
-@version        1.0
-@description    GameSense Forum Styling
-@author         Abbie - github.com/abbie
-==/UserStyle== */
-@-moz-document url-prefix("https://gamesense.pub/forums") {
+
 .pun abbr,.pun blockquote,.pun cite,.pun dd,.pun div,.pun dl,.pun dt,.pun fieldset,.pun form,.pun h1,.pun h2,.pun h3,.pun h4,.pun h5,.pun img,.pun li,.pun ol,.pun p,.pun pre,.pun table,.pun td,.pun th,.pun ul {
     margin: 0;
     padding: 0;
@@ -1661,7 +1654,7 @@ nav {
     ::-webkit-scrollbar-thumb {
         background-color: #666;
     }
-}
+
 
   
 #shout #ajaxChatChatList {
