@@ -1377,6 +1377,9 @@ body {
 
 .pun a.usergroup-6:hover {
     opacity: .75;
+    content: 'Banned user';
+    text-shadow: 0px 0px 10px #ccc;
+    transition: text-shadow 0.6s ease-in-out;
 }
 
 .pun .usergroup-7 {
