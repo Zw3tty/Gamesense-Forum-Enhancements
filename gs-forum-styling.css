@@ -1374,6 +1374,7 @@ body {
     font-weight: 400;
     color: #ccc;
     opacity: .5;
+    text-shadow: 0px 0px 10px #ccc;
 }
 
 .pun a.usergroup-6:hover {
