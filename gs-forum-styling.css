@@ -1080,6 +1080,7 @@ body {
     font-weight: 700;
     position: relative;
     color: #bbb;
+    z-index: 1;
 }
 
 .infldset h2 {
