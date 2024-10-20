@@ -1205,7 +1205,7 @@ div.rbox input {
 body {
     /* background-color:#151514; */
     color: var(--Text-color-white);
-    background: url(https://i.imgur.com/cUHelzE.png);
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAAAAACMmsGiAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV9TRZGqiB1EHDJUJyuiIrpJFYtgobQVWnUwufQLmjQkKS6OgmvBwY/FqoOLs64OroIg+AHi4uqk6CIl/i8ptIjx4Lgf7+497t4BQq3EVLNtHFA1y0hEI2I6syp2vCKAPvRgFmMSM/VYcjEFz/F1Dx9f78I8y/vcn6NbyZoM8InEc0w3LOIN4ulNS+e8TxxkBUkhPiceNeiCxI9cl11+45x3WOCZQSOVmCcOEov5FpZbmBUMlXiKOKSoGuULaZcVzluc1VKFNe7JXxjIaitJrtMcQhRLiCEOETIqKKIEC2FaNVJMJGg/4uEfdPxxcsnkKoKRYwFlqJAcP/gf/O7WzE1OuEmBCND+Ytsfw0DHLlCv2vb3sW3XTwD/M3ClNf3lGjDzSXq1qYWOgN5t4OK6qcl7wOUOMPCkS4bkSH6aQi4HvJ/RN2WA/luga83trbGP0wcgRV0t3wAHh8BInrLXPd7d2drbv2ca/f0A9GNy2ziVJVAAAAACYktHRAChC1ywTAAAABlJREFUeNpj4BHhEWHgEREBETwiDCIiPCIACnQBEVYyfbEAAAAASUVORK5CYII=);
 }
 
 .pun {
@@ -2487,6 +2487,7 @@ button.workshop-action-active::after {
 
 /* The container of the messages */
 #shout>div:nth-of-type(1) {
+    background-color: #20201F;
     color: var(--Text-color-white);
     height: 200px;
     overflow: auto;
