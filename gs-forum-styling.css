@@ -2017,13 +2017,14 @@ nav {
 
 /* New styling start */
 /* Container styling */
+/* Container styling */
 #notifications-container {
-    background-color: var(--Background-color-2);
+    background-color: var(--Background-color-2); /* Dark background */
     border: 1px solid var(--border-color);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
-    padding: 10px;
-    width: 300px;
-    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow for better contrast */
+    padding: 15px;
+    width: 320px; /* Slightly wider for better readability */
+    border-radius: 10px; /* Softer border */
     position: absolute;
     z-index: 1000;
     display: none;
@@ -2046,7 +2047,7 @@ nav {
 #notifications-body {
     max-height: 400px;
     overflow-y: auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* Notifications list */
@@ -2058,14 +2059,16 @@ nav {
 
 /* Notification items */
 #notifications-list li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
     border-bottom: 1px solid var(--border-color);
-    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
 }
 
 /* Old notifications style */
 .old-notification {
-    opacity: 0.7;
+    opacity: 0.6; /* More faded */
     color: var(--Text-color-white);
 }
 
@@ -2081,6 +2084,8 @@ nav {
     text-decoration: none;
     color: var(--Main-GS-Color);
     font-size: 14px;
+    line-height: 1.4;
+    flex-grow: 1; /* Make text expand full width */
 }
 
 /* Notification link hover */
@@ -2090,9 +2095,8 @@ nav {
 
 /* Notification date/time */
 .dateTime {
-    font-size: 12px;
-    color: var(--Text-color-white);
-    display: block;
+    font-size: 11px;
+    color: #aaa; /* Lighter gray for time */
     margin-top: 4px;
 }
 
@@ -2105,17 +2109,36 @@ nav {
 #notifications-clear {
     color: var(--Main-GS-Color);
     text-decoration: none;
-    font-size: 12px;
+    font-size: 13px;
     border: 1px solid var(--Main-GS-Color);
-    padding: 4px 8px;
-    border-radius: 4px;
+    padding: 5px 10px;
+    border-radius: 5px;
     background-color: var(--Background-color-1);
     transition: background-color 0.2s ease;
 }
 
 #notifications-clear:hover {
     background-color: var(--Main-GS-Color);
-    color: var(--Text-color-black); /* Black text on hover */
+    color: var(--Text-color-black);
+}
+
+/* Badge unread */
+.badge-unread:after {
+    content: attr(data-after-content);
+    position: absolute;
+    height: 1.5em; /* Larger for better readability */
+    width: 1.5em; /* Balanced height/width */
+    top: -.5em;
+    right: -0.5em; /* Position it more cleanly */
+    background: #E25950;
+    border-radius: 50%; /* Fully round badge */
+    line-height: 1.5em;
+    font-size: 12px;
+    color: var(--Text-color-white);
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 1px 1px 1px var(--Text-color-black);
+    font-weight: bold; /* Stronger text */
 }
 /* New Styling end */
 
