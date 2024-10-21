@@ -2597,16 +2597,14 @@ button.workshop-action-active::after {
 }
 
 #emojiselector {
+    display: inline-block;
+    text-align: center;
     position: absolute;
-    right: 1px;
+    right: 0px;
+    line-height: 20px;
     font-size: 1.5em;
-    width: 50px;
-    vertical-align: top;
-    float: right;
-    border-bottom: none;
-    border-right: none;
+    border: none;
     border-top: 1px solid var(--border-color);
-    border-left: none;
     background-color: var(--Background-color-1);
 }
 
@@ -2620,15 +2618,13 @@ button.workshop-action-active::after {
 }
 
 #shoutvol {
-    width: 50px;
     display: inline-block;
     text-align: center;
-    background: var(--Background-color-1);
     border-top: 1px solid var(--border-color);
-    height: 22px;
+    height: 20px;
     position: absolute;
     right: 50px;
-    line-height: 22px;
+    line-height: 20px;
 }
 
 /* HLS Lua */
