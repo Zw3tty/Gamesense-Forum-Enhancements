@@ -1633,10 +1633,14 @@ select {
 
 .pun .iredirect .icon {
     border-color: #383838 #383838 #383838 #383838;
+    box-shadow: 0 0 5px #383838;
+    border-radius: 50%;
 }
 
 .pun .inew .icon {
     border-color: #5496d8 #4b85c0 #4377ac #4f8dcb;
+    box-shadow: 0 0 5px #5496d8;
+    border-radius: 50%;
 }
 
 .pun .usergroup-1 {
@@ -1945,9 +1949,6 @@ nav {
     width: 15%
 }
 
-/* Notifcation container start */
-
-/* OLD Styling start */
 #notifications {
     position: relative
 }
@@ -2013,13 +2014,6 @@ nav {
 #notifications-footer {
     text-align: center
 }
-/* OLD Styling end */
-
-/* New styling start */
-
-/* New Styling end */
-
-/* Notifcation container end */
 
 .hidden {
     display: none !important
