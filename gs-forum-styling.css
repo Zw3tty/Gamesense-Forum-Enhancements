@@ -1948,7 +1948,7 @@ nav {
 /* Notifcation container start */
 
 /* OLD Styling start */
-/* #notifications {
+#notifications {
     position: relative
 }
 
@@ -2012,132 +2012,11 @@ nav {
 
 #notifications-footer {
     text-align: center
-} */
+}
 /* OLD Styling end */
 
 /* New styling start */
-/* Container styling */
-/* Container styling */
-#notifications-container {
-    background-color: var(--Background-color-2); /* Dark background */
-    border: 1px solid var(--border-color);
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4); /* Stronger shadow for better contrast */
-    padding: 15px;
-    width: 320px; /* Slightly wider for better readability */
-    border-radius: 10px; /* Softer border */
-    position: absolute;
-    z-index: 1000;
-    display: none;
-    animation: fadeIn 0.3s ease-in-out;
-}
 
-/* Fade in animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/* Notification body styling */
-#notifications-body {
-    max-height: 400px;
-    overflow-y: auto;
-    margin-bottom: 15px;
-}
-
-/* Notifications list */
-#notifications-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Notification items */
-#notifications-list li {
-    margin-bottom: 12px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
-    align-items: center;
-}
-
-/* Old notifications style */
-.old-notification {
-    opacity: 0.6; /* More faded */
-    color: var(--Text-color-white);
-}
-
-/* New notifications style */
-.new-notification {
-    font-weight: bold;
-    opacity: 1;
-    color: var(--Text-color-white);
-}
-
-/* Notification link */
-.notification-link {
-    text-decoration: none;
-    color: var(--Main-GS-Color);
-    font-size: 14px;
-    line-height: 1.4;
-    flex-grow: 1; /* Make text expand full width */
-}
-
-/* Notification link hover */
-.notification-link:hover {
-    text-decoration: underline;
-}
-
-/* Notification date/time */
-.dateTime {
-    font-size: 11px;
-    color: #aaa; /* Lighter gray for time */
-    margin-top: 4px;
-}
-
-/* Clear button styling */
-#notifications-footer {
-    text-align: center;
-    margin-top: 10px;
-}
-
-#notifications-clear {
-    color: var(--Main-GS-Color);
-    text-decoration: none;
-    font-size: 13px;
-    border: 1px solid var(--Main-GS-Color);
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: var(--Background-color-1);
-    transition: background-color 0.2s ease;
-}
-
-#notifications-clear:hover {
-    background-color: var(--Main-GS-Color);
-    color: var(--Text-color-black);
-}
-
-/* Badge unread */
-.badge-unread:after {
-    content: attr(data-after-content);
-    position: absolute;
-    height: 1.25em;
-    width: 1.1em;
-    top: -.5em;
-    background: #E25950;
-    border-radius: 25%;
-    line-height: 1.3em;
-    font-size: x-small;
-    color: var(--Text-color-white);
-    font-family: sans-serif;
-    text-align: center;
-    text-shadow: 1px 1px 1px var(--Text-color-black)
-}
 /* New Styling end */
 
 /* Notifcation container end */
