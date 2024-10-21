@@ -2,7 +2,9 @@
     --Main-GS-Color: #95b806;
     --border-color: #303030;
     --Background-color-1: #1d1d1c;
+    --Background-color-2: #191919;
     --Text-color-white: #d4d4d4;
+    --Text-color-black: #000000;
 }
 
 .pun abbr,
@@ -766,7 +768,7 @@ html {
 .pun .txtarea textarea,
 .pun input.longinput {
     width: 100%; 
-    background-color: #191919;
+    background-color: var(--Background-color-2);
     color: #CDCDCD;
     border: 1px solid #101010;
     outline: none;
@@ -1943,7 +1945,10 @@ nav {
     width: 15%
 }
 
-#notifications {
+/* Notifcation container start */
+
+/* OLD Styling start */
+/* #notifications {
     position: relative
 }
 
@@ -1955,17 +1960,16 @@ nav {
     content: attr(data-after-content);
     position: absolute;
     height: 1.25em;
-    width: 1em;
+    width: 1.1em;
     top: -.5em;
-    background: #e2523b;
-    border: 1px solid #300;
+    background: #E25950;
     border-radius: 25%;
-    line-height: 1.25em;
+    line-height: 1.3em;
     font-size: x-small;
-    color: #fff;
+    color: var(--Text-color-white);
     font-family: sans-serif;
     text-align: center;
-    text-shadow: 1px 1px #000
+    text-shadow: 1px 1px 1px var(--Text-color-black)
 }
 
 #notifications li {
@@ -1973,8 +1977,8 @@ nav {
 }
 
 #notifications-container {
-    background-color: #3a3a3a;
-    border: 1px solid rgba(100, 100, 100, .4);
+    background-color: var(--Background-color-2);
+    border: 1px solid var(--border-color);
     box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
     overflow: visible;
     position: absolute;
@@ -2008,7 +2012,114 @@ nav {
 
 #notifications-footer {
     text-align: center
+} */
+/* OLD Styling end */
+
+/* New styling start */
+/* Container styling */
+#notifications-container {
+    background-color: var(--Background-color-2);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    animation: fadeIn 0.3s ease-in-out;
 }
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Notification body styling */
+#notifications-body {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+/* Notifications list */
+#notifications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Notification items */
+#notifications-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+/* Old notifications style */
+.old-notification {
+    opacity: 0.7;
+    color: var(--Text-color-white);
+}
+
+/* New notifications style */
+.new-notification {
+    font-weight: bold;
+    opacity: 1;
+    color: var(--Text-color-white);
+}
+
+/* Notification link */
+.notification-link {
+    text-decoration: none;
+    color: var(--Main-GS-Color);
+    font-size: 14px;
+}
+
+/* Notification link hover */
+.notification-link:hover {
+    text-decoration: underline;
+}
+
+/* Notification date/time */
+.dateTime {
+    font-size: 12px;
+    color: var(--Text-color-white);
+    display: block;
+    margin-top: 4px;
+}
+
+/* Clear button styling */
+#notifications-footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#notifications-clear {
+    color: var(--Main-GS-Color);
+    text-decoration: none;
+    font-size: 12px;
+    border: 1px solid var(--Main-GS-Color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: var(--Background-color-1);
+    transition: background-color 0.2s ease;
+}
+
+#notifications-clear:hover {
+    background-color: var(--Main-GS-Color);
+    color: var(--Text-color-black); /* Black text on hover */
+}
+/* New Styling end */
+
+/* Notifcation container end */
 
 .hidden {
     display: none !important
