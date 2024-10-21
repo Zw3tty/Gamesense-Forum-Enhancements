@@ -2126,19 +2126,17 @@ nav {
 .badge-unread:after {
     content: attr(data-after-content);
     position: absolute;
-    height: 1.5em; /* Larger for better readability */
-    width: 1.5em; /* Balanced height/width */
+    height: 1.25em;
+    width: 1.1em;
     top: -.5em;
-    right: -0.5em; /* Position it more cleanly */
     background: #E25950;
-    border-radius: 50%; /* Fully round badge */
-    line-height: 1.5em;
-    font-size: 12px;
+    border-radius: 25%;
+    line-height: 1.3em;
+    font-size: x-small;
     color: var(--Text-color-white);
     font-family: sans-serif;
     text-align: center;
-    text-shadow: 1px 1px 1px var(--Text-color-black);
-    font-weight: bold; /* Stronger text */
+    text-shadow: 1px 1px 1px var(--Text-color-black)
 }
 /* New Styling end */
 
