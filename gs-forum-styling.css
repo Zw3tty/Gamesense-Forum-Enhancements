@@ -5,6 +5,7 @@
     --Background-color-2: #191919;
     --Text-color-white: #d4d4d4;
     --Text-color-black: #000000;
+    --Text-color-gray: #cccccc;
 }
 
 .pun abbr,
@@ -2582,6 +2583,9 @@ button.workshop-action-active::after {
     font-size: 1.5em;
     height: 22px;
     vertical-align: top;
+    outline: none;
+    caret-color: #fff;
+    color: var(--Text-color-gray);
 }
 
 #shout p {
