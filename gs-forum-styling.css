@@ -1627,8 +1627,9 @@ select {
 }
 
 .pun .icon {
-    border-color: #333;
-    border-radius: 0;
+    border-color: #383838 #383838 #383838 #383838;
+    box-shadow: 0 0 5px #383838;
+    border-radius: 50%;
 }
 
 .pun .iredirect .icon {
