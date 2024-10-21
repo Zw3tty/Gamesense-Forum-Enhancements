@@ -4,8 +4,12 @@
     --Background-color-1: #1d1d1c;
     --Background-color-2: #191919;
     --Text-color-white: #d4d4d4;
-    --Text-color-black: #000000;
     --Text-color-gray: #cccccc;
+    --Text-color-black: #000000;
+
+    --Color-white: #d4d4d4;
+    --Color-gray: #cccccc;
+    --Color-black: #000000;
 }
 
 .pun abbr,
@@ -2584,7 +2588,7 @@ button.workshop-action-active::after {
     height: 22px;
     vertical-align: top;
     outline: none;
-    caret-color: #fff;
+    caret-color: var(--Color-gray);
     color: var(--Text-color-gray);
 }
 
