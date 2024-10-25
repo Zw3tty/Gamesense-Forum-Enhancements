@@ -767,12 +767,12 @@ html {
 }
 
 .pun .txtarea {
-    width: 75%
+    width: 100%
 }
 
 .pun .txtarea textarea,
 .pun input.longinput {
-    width: 100% !important;
+    width: 100%;
     background-color: var(--Background-color-2);
     color: #CDCDCD;
     border: 1px solid #101010;
