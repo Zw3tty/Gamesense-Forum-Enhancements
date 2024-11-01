@@ -1,6 +1,6 @@
 :root {
     --Main-GS-Color: #95b806;
-    --border-color: #303030;
+    --border-color: #30303000;
     --Background-color-1: #1d1d1c;
     --Background-color-2: #191919;
     --Text-color-white: #d4d4d4;
@@ -605,7 +605,7 @@ html {
 }
 
 .pun .tcl h3 a:hover {
-    color: #b4e61e
+    color: #95b806
 }
 
 .pun .tcl h3 span.newtext {
@@ -1484,6 +1484,15 @@ select {
     background-color: #20201f
 }
 
+.pun .rowHighlight {
+    background-color: #312b25;
+}
+
+.blockpost.rowHighlight.liker {
+    margin-top: -12px;
+    /* border-top: 1px solid transparent; */
+}
+
 .pun .blockpost .box,
 .pun .deletemsg,
 .pun .postfootright,
@@ -1649,6 +1658,30 @@ select {
     border-color: #5496d8 #4b85c0 #4377ac #4f8dcb;
     box-shadow: 0 0 5px #5496d8;
     border-radius: 50%;
+    animation: heartbeat 2s ease-in-out infinite; /* Slower heartbeat animation */
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 3px 1px #5496d8;
+    }
+    25% {
+        transform: scale(1.05); /* Small first "boom" */
+        box-shadow: 0 0 4px 2px #5496d8;
+    }
+    35% {
+        transform: scale(1);
+        box-shadow: 0 0 3px 1px #5496d8;
+    }
+    50% {
+        transform: scale(1.05); /* Small second "boom" */
+        box-shadow: 0 0 4px 2px #5496d8;
+    }
+    100% {
+        transform: scale(1); /* Return to normal and hold */
+        box-shadow: 0 0 3px 1px #5496d8;
+    }
 }
 
 .pun .usergroup-1 {
